@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gray"
+    tools:context=".Room2Activity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/Room2main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Red"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Room 2"
+            android:textSize="27sp"
+            android:textColor="@color/Gray"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/backMenu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back"
+            android:layout_gravity="left"
+            android:onClick="backmenu"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Thiết bị 1"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:src="@drawable/deviceoff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/BtnOn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:text="On"
+                    android:textColor="@color/Gray"
+                    android:textSize="9sp"
+                    android:onClick="actionOn1"/>
+                <Button
+                    android:id="@+id/BtnOff1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:text="Off"
+                    android:textColor="@color/Gray"
+                    android:textSize="9sp"
+                    android:onClick="actionOff1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/TxtIp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="minutes"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:visibility="visible"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:id="@+id/Time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout> <!--device 1 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Thiết bị 2"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:src="@drawable/deviceoff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/BtnOn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:text="On"
+                    android:textColor="@color/Gray"
+                    android:textSize="9sp"
+                    android:onClick="actionOn2"/>
+                <Button
+                    android:id="@+id/BtnOff2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:text="Off"
+                    android:textColor="@color/Gray"
+                    android:textSize="9sp"
+                    android:onClick="actionOff2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/TxtIp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="minutes"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:visibility="visible"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:id="@+id/Time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout> <!--device 2 -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Thiết bị 3"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:src="@drawable/deviceoff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/BtnOn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:text="On"
+                    android:textColor="@color/Gray"
+                    android:textSize="9sp"
+                    android:onClick="actionOn3"/>
+                <Button
+                    android:id="@+id/BtnOff3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:text="Off"
+                    android:textColor="@color/Gray"
+                    android:textSize="9sp"
+                    android:onClick="actionOff3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/TxtIp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="minutes"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:visibility="visible"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:id="@+id/Time3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>  <!--device 3 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Thiết bị 4"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:src="@drawable/deviceoff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/BtnOn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:text="On"
+                    android:textColor="@color/Gray"
+                    android:textSize="9sp"
+                    android:onClick="actionOn4"/>
+                <Button
+                    android:id="@+id/BtnOff4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:text="Off"
+                    android:textColor="@color/Gray"
+                    android:textSize="9sp"
+                    android:onClick="actionOff4"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/TxtIp4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="minutes"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:visibility="visible"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:id="@+id/Time4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>  <!--device 4 -->
+
+    </LinearLayout>
+</LinearLayout>

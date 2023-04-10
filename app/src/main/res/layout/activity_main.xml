@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gray"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Red"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textSize="27sp"
+            android:textColor="@color/Gray"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+                <TextView
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Smart"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="40dp"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@color/Red"
+                    android:layout_gravity="center"
+                    android:textFontWeight="500"
+                    android:textSize="50dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnRoom1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room 1"
+                    android:layout_margin="10dp"
+                    android:onClick="AcessRoom1"/>
+                <Button
+                    android:id="@+id/btnRoom2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room 2"
+                    android:layout_margin="10dp"
+                    android:onClick="AcessRoom2"/>
+        </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
